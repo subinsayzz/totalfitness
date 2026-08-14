@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>X-Figure Fitness | The Ultimate Workout Destination</title>
-  <meta name="description" content="X-Figure fitness is the ideal place for fitness enthusiasts. Wide area, modern equipment, and supportive trainers in Angamaly.">
+  <title>Total Fitness | The Ultimate Workout Destination</title>
+  <meta name="description" content="Total Fitness is the ideal place for fitness enthusiasts. Wide area, modern equipment, and supportive trainers.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="totalfitness assets/Total fitnesslogo.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
   <header class="glass-header" id="header">
     <div class="header-container">
       <a href="#home" class="logo-wrapper">
-        <img src="X-Figure%20Fitness%20assets%20/logo-xfigure-new.png" alt="X-Figure Fitness Logo" class="brand-logo">
+        <img src="totalfitness assets/Total fitnesslogo.png" alt="Total Fitness Logo" class="brand-logo">
       </a>
       
       <button class="mobile-menu-btn" aria-label="Toggle Menu">
@@ -29,7 +30,10 @@
       <nav class="main-nav">
         <a href="#home" class="nav-link">Home</a>
         <a href="#about" class="nav-link">About</a>
-        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#classes" class="nav-link">Classes</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#trainers" class="nav-link">Coaches</a>
         <a href="#gallery" class="nav-link">Gallery</a>
         <a href="#pricing" class="nav-link">Pricing</a>
         <a href="#reviews" class="nav-link">Reviews</a>
@@ -41,22 +45,30 @@
   <main>
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-      <div class="video-background">
+      <div class="hero-media" aria-hidden="true">
         <iframe 
-          src="https://www.youtube.com/embed/njiOfQEJdZg?autoplay=1&mute=1&controls=0&loop=1&playlist=njiOfQEJdZg&playsinline=1&rel=0&modestbranding=1" 
+          src="https://www.youtube.com/embed/5m6ojjg-ces?autoplay=1&mute=1&controls=0&loop=1&playlist=5m6ojjg-ces&playsinline=1&rel=0&modestbranding=1&enablejsapi=1" 
+          title="Total Fitness gym background video"
           frameborder="0" 
           allow="autoplay; encrypted-media; picture-in-picture" 
           allowfullscreen>
         </iframe>
       </div>
+      <div class="hero-grain" aria-hidden="true"></div>
       <div class="hero-overlay"></div>
       
       <div class="hero-content reveal-wrapper">
-        <div class="badge reveal-item delay-1">THE PREMIER FITNESS DESTINATION</div>
-        <h1 class="reveal-item delay-2">SCULPT YOUR <span class="gradient-text">X-FIGURE</span></h1>
-        <p class="hero-desc reveal-item delay-3">An ideal place for anyone with a passion for fitness. Wide area, modern equipment, and incredibly supportive trainers.</p>
+        <div class="badge reveal-item delay-1">TOTAL FITNESS - MANANTHAVADY</div>
+        <h1 class="reveal-item delay-2">TRAIN IN A SPACE BUILT FOR<br><span class="gradient-text">REAL PROGRESS</span></h1>
+        <p class="hero-desc reveal-item delay-3">A clean, spacious gym in the heart of Wayanad with strength machines, cardio zones, group sessions, and trainers who help you show up with confidence.</p>
         <div class="hero-actions reveal-item delay-4">
-          <a href="#experience" class="btn-primary glow-btn">Explore Facilities</a>
+          <a href="#pricing" class="btn-primary glow-btn">View Memberships</a>
+          <a href="#gallery" class="btn-secondary">See Inside</a>
+        </div>
+        <div class="hero-proof reveal-item delay-4" aria-label="Gym highlights">
+          <span><strong>750+</strong> active members</span>
+          <span><strong>Certified</strong> expert trainers</span>
+          <span><strong>Ladies</strong> special batches</span>
         </div>
       </div>
     </section>
@@ -65,53 +77,173 @@
     <section id="about" class="about-section section-pad">
       <div class="container about-grid">
         <div class="about-image reveal-item">
-          <img src="X-Figure%20Fitness%20assets%20/PSY06141.jpg" alt="About X-Figure Fitness" class="glass-card" loading="lazy">
+          <img src="totalfitness assets/vlcsnap-2026-08-06-02h48m31s026.png" alt="About Total Fitness" class="glass-card" loading="lazy">
         </div>
         <div class="about-text reveal-item delay-2">
-          <h2>MORE THAN JUST <span class="gradient-text">A GYM</span></h2>
-          <p>X-Figure fitness is the ultimate destination for fitness enthusiasts. We believe in providing an environment that is not just highly equipped but also clean, calm, and incredibly motivating.</p>
-          <p>Our expansive area features a massive array of equipment, and our expert coaches—Kannan, Praveen, and Anoop—are always ready to guide you. Whether it's high-level cardio every Saturday or dedicated diet planning, we are here to help you build the best version of yourself.</p>
+          <h2>ABOUT <span class="gradient-text">TOTAL FITNESS</span></h2>
+          <p>Located right here in beautiful Mananthavady, Total Fitness is so much more than just a place to lift weights. We believe in creating a space that feels like home—where everyone from beginners to pros feels comfortable, safe, and motivated.</p>
+          <p>Our clean, spacious facility is packed with modern equipment, but what really sets us apart is our people. Our friendly trainers take the time to know you, understand your goals, and guide you every step of the way. Step through our doors and let's build the best version of you, together.</p>
           <div class="about-stats mt-4">
-            <div class="stat">
-              <h3 class="gradient-text">13+</h3>
-              <span>Years Experience</span>
+            <div class="stat-card">
+              <div class="stat-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <h3 class="stat-num gradient-text">100%</h3>
+                <span class="stat-title">Certified Trainers</span>
+                <p class="stat-sub">Expert 1-on-1 Guidance</p>
+              </div>
             </div>
-            <div class="stat">
-              <h3 class="gradient-text">1000+</h3>
-              <span>Active Members</span>
+            <div class="stat-card">
+              <div class="stat-icon-wrap">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <h3 class="stat-num gradient-text">750+</h3>
+                <span class="stat-title">Active Members</span>
+                <p class="stat-sub">Community in Wayanad</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="experience" class="features-section section-pad">
+    <!-- Services Section (replaces Features) -->
+    <section id="services" class="features-section section-pad">
       <div class="container">
         <div class="section-title reveal-item">
-          <h2>THE <span class="gradient-text">X-FIGURE</span> ADVANTAGE</h2>
-          <p>Experience world-class equipment and a positive, calm atmosphere designed for your peak performance.</p>
+          <h2>OUR <span class="gradient-text">SERVICES</span></h2>
+          <p>Experience world-class training programs designed for your peak performance.</p>
         </div>
 
-        <div class="features-split">
-          <div class="feature-image reveal-item delay-1">
-            <img src="X-Figure%20Fitness%20assets%20/540578815_17921579397130173_4871936626387021590_n.jpg" alt="Gym Advantage" class="glass-card" style="width: 100%; height: 100%; object-fit: cover; padding: 0;" loading="lazy">
+        <div class="services-grid">
+          <div class="service-card glass-card reveal-item delay-1">
+            <div class="service-icon">💪</div>
+            <h3>Personal Training</h3>
           </div>
-          <div class="features-grid-vertical">
-            <div class="feature-card glass-card reveal-item delay-2">
-              <div class="icon-wrapper">🏋️</div>
-              <h3>Modern Equipment</h3>
-              <p>A wide range of spotless, modern, and well-organized machines catering to all fitness levels.</p>
+          <div class="service-card glass-card reveal-item delay-2">
+            <div class="service-icon">👥</div>
+            <h3>Group Training</h3>
+          </div>
+          <div class="service-card glass-card reveal-item delay-3">
+            <div class="service-icon">🎵</div>
+            <h3>Zumba / Aerobics</h3>
+          </div>
+          <div class="service-card glass-card reveal-item delay-4">
+            <div class="service-icon">🏃</div>
+            <h3>Cardio Training</h3>
+          </div>
+          <div class="service-card glass-card reveal-item delay-1">
+            <div class="service-icon">🎯</div>
+            <h3>Weight Programs</h3>
+          </div>
+          <div class="service-card glass-card reveal-item delay-2">
+            <div class="service-icon">🏋️</div>
+            <h3>Strength & Resistance</h3>
+          </div>
+          <div class="service-card glass-card reveal-item delay-3">
+            <div class="service-icon">🤸</div>
+            <h3>Functional Training</h3>
+          </div>
+          <div class="service-card glass-card reveal-item delay-4">
+            <div class="service-icon">🧘</div>
+            <h3>Flexibility & Mobility</h3>
+          </div>
+          <div class="service-card glass-card reveal-item delay-1">
+            <div class="service-icon">🥗</div>
+            <h3>Nutrition & Diet</h3>
+          </div>
+          <div class="service-card glass-card reveal-item delay-2">
+            <div class="service-icon">🥋</div>
+            <h3>Karate & Dance</h3>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 reveal-item delay-3" style="text-align: center; margin-top: 4rem;">
+          <div class="badge glow-badge">✨ LADIES SPECIAL BATCHES AVAILABLE ✨</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio & Cultural Classes Section -->
+    <section id="classes" class="classes-section section-pad" style="background: radial-gradient(circle at center, rgba(212, 175, 55, 0.04), transparent 70%);">
+      <div class="container">
+        <div class="section-title reveal-item">
+          <h2>STUDIO & <span class="gradient-text">CULTURAL CLASSES</span></h2>
+          <p>Holistic training, classical Indian dance, martial arts, and vibrant group movement for all age groups.</p>
+        </div>
+
+        <div class="classes-grid">
+          <!-- Bharatanatyam -->
+          <div class="class-card reveal-item delay-1">
+            <div class="class-img-box">
+              <span class="class-badge">CULTURAL ARTS</span>
+              <img src="totalfitness assets/bharatanatyam_class.jpg" alt="Bharatanatyam Class" loading="lazy">
             </div>
-            <div class="feature-card glass-card reveal-item delay-3">
-              <div class="icon-wrapper">✨</div>
-              <h3>Pristine Hygiene</h3>
-              <p>Spotlessly clean facilities, highly maintained equipment, and great civic sense across the community.</p>
+            <div class="class-body">
+              <h3>BHARATANATYAM</h3>
+              <p>Master traditional footwork, rhythmic padams, hand mudras, and expressive abhinaya under certified gurus. Batches available for kids and adults.</p>
+              <div class="class-meta">
+                <span class="schedule">📅 Mon, Wed & Fri</span>
+                <span>⏰ 5:00 PM - 6:30 PM</span>
+              </div>
             </div>
-            <div class="feature-card glass-card reveal-item delay-4">
-              <div class="icon-wrapper">👥</div>
-              <h3>Supportive Trainers</h3>
-              <p>Our friendly, highly qualified coaches give personalized diet planning and weekly progress checks.</p>
+          </div>
+
+          <!-- Karate & Self Defense -->
+          <div class="class-card reveal-item delay-2">
+            <div class="class-img-box">
+              <span class="class-badge">MARTIAL ARTS</span>
+              <img src="totalfitness assets/karate_class.jpg" alt="Karate & Self Defense" loading="lazy">
+            </div>
+            <div class="class-body">
+              <h3>KARATE & SELF-DEFENSE</h3>
+              <p>Build discipline, mental focus, reflexes, and practical self-defense with black-belt certified senseis and belt progression grading.</p>
+              <div class="class-meta">
+                <span class="schedule">📅 Tue, Thu & Sat</span>
+                <span>⏰ 6:00 PM - 7:30 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Zumba & Aerobics -->
+          <div class="class-card reveal-item delay-3">
+            <div class="class-img-box">
+              <span class="class-badge">GROUP DANCE</span>
+              <img src="totalfitness assets/zumba_class.jpg" alt="Zumba & Aerobics" loading="lazy">
+            </div>
+            <div class="class-body">
+              <h3>ZUMBA & AEROBICS</h3>
+              <p>High-energy calorie-burning dance workout set to upbeat music. Improve cardio stamina, tone your full body, and have fun together.</p>
+              <div class="class-meta">
+                <span class="schedule">📅 Daily Batches</span>
+                <span>⏰ Morning & Evening</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Yoga & Flexibility -->
+          <div class="class-card reveal-item delay-4">
+            <div class="class-img-box">
+              <span class="class-badge">WELLNESS & FLOW</span>
+              <img src="totalfitness assets/yoga_class.jpg" alt="Yoga & Flexibility" loading="lazy">
+            </div>
+            <div class="class-body">
+              <h3>YOGA & MOBILITY</h3>
+              <p>Restore joint health, release tight muscles, correct posture, and calm your nervous system with guided pranayama and asana flows.</p>
+              <div class="class-meta">
+                <span class="schedule">📅 Mon to Sat</span>
+                <span>⏰ 6:30 AM - 7:30 AM</span>
+              </div>
             </div>
           </div>
         </div>
@@ -127,29 +259,168 @@
         </div>
 
         <div class="bento-grid">
-          <div class="bento-item reveal-item delay-1">
-            <img src="X-Figure%20Fitness%20assets%20/PSY05782.jpg" alt="Gym Facility" loading="lazy">
+          <figure class="bento-item bento-wide reveal-item delay-1">
+            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.09 (1).jpeg" alt="Bright strength training floor at Total Fitness" loading="lazy">
+            <figcaption>Strength floor</figcaption>
+          </figure>
+          <figure class="bento-item reveal-item delay-2">
+            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.08 (2).jpeg" alt="Cardio machines and open workout area" loading="lazy">
+            <figcaption>Cardio zone</figcaption>
+          </figure>
+          <figure class="bento-item reveal-item delay-3">
+            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.09 (5).jpeg" alt="Dumbbell rack with free weights" loading="lazy">
+            <figcaption>Free weights</figcaption>
+          </figure>
+          <figure class="bento-item bento-tall reveal-item delay-4">
+            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.08 (1).jpeg" alt="Loaded barbell and resistance training setup" loading="lazy">
+            <figcaption>Resistance training</figcaption>
+          </figure>
+          <figure class="bento-item reveal-item delay-1">
+            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.08 (4).jpeg" alt="Treadmills and cardio equipment facing the gym mural" loading="lazy">
+            <figcaption>Treadmill area</figcaption>
+          </figure>
+          <figure class="bento-item reveal-item delay-2">
+            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.09 (2).jpeg" alt="Total Fitness entrance signage" loading="lazy">
+            <figcaption>Club entrance</figcaption>
+          </figure>
+          <figure class="bento-item bento-wide reveal-item delay-3">
+            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.09 (4).jpeg" alt="Panoramic view of the gym equipment layout" loading="lazy">
+            <figcaption>Open training layout</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events & Workshops Section -->
+    <section id="events" class="events-section section-pad">
+      <div class="container">
+        <div class="section-title reveal-item">
+          <h2>MEMBER <span class="gradient-text">PROGRAMS & WORKSHOPS</span></h2>
+          <p>Compete, connect, and elevate your fitness journey through exclusive member workshops and seasonal challenges.</p>
+        </div>
+
+        <div class="events-grid">
+          <!-- Event 1 -->
+          <div class="event-card reveal-item delay-1">
+            <div class="event-img-wrap">
+              <span class="event-date-badge">SEASONAL<br><small>WORKSHOP</small></span>
+              <img src="totalfitness assets/vlcsnap-2026-08-06-02h40m56s237.png" alt="Strength & Powerlifting Masterclass" loading="lazy">
+            </div>
+            <div class="event-body">
+              <span class="event-category">SPECIALIZED WORKSHOP</span>
+              <h3>STRENGTH & POWERLIFTING DRILLS</h3>
+              <p>Form checks, bench press & deadlift mechanics, and progressive overload masterclasses under expert guidance.</p>
+              <div class="event-footer">
+                <span class="event-location">📅 Inquire at Desk</span>
+                <a href="#location" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8125rem;">Inquire Details</a>
+              </div>
+            </div>
           </div>
-          <div class="bento-item reveal-item delay-2">
-            <img src="X-Figure%20Fitness%20assets%20/PSY05881.jpg" alt="Gym Facility" loading="lazy">
+
+          <!-- Event 2 -->
+          <div class="event-card reveal-item delay-2">
+            <div class="event-img-wrap">
+              <span class="event-date-badge">CONTINUOUS<br><small>ENROLMENT</small></span>
+              <img src="totalfitness assets/vlcsnap-2026-08-06-02h43m47s839.png" alt="Body Transformation Challenge" loading="lazy">
+            </div>
+            <div class="event-body">
+              <span class="event-category">TRANSFORMATION PROGRAM</span>
+              <h3>BODY TRANSFORMATION BOOTCAMP</h3>
+              <p>Customized workout splits, periodic body composition tracking, and personalized diet guidance tailored to your body goal.</p>
+              <div class="event-footer">
+                <span class="event-location">📅 Flexible Batches</span>
+                <a href="#location" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8125rem;">Join Program</a>
+              </div>
+            </div>
           </div>
-          <div class="bento-item reveal-item delay-3">
-            <img src="X-Figure%20Fitness%20assets%20/PSY05934.jpg" alt="Gym Facility" loading="lazy">
+
+          <!-- Event 3 -->
+          <div class="event-card reveal-item delay-3">
+            <div class="event-img-wrap">
+              <span class="event-date-badge">OUTDOOR<br><small>SESSIONS</small></span>
+              <img src="totalfitness assets/vlcsnap-2026-08-06-02h51m44s915.png" alt="Outdoor Conditioning & Trail Runs" loading="lazy">
+            </div>
+            <div class="event-body">
+              <span class="event-category">OUTDOOR CONDITIONING</span>
+              <h3>OUTDOOR DRILLS & TRAIL RUNS</h3>
+              <p>Group stamina conditioning, outdoor cardiovascular endurance, and fresh air mountain training sessions.</p>
+              <div class="event-footer">
+                <span class="event-location">📅 Announced Monthly</span>
+                <a href="#location" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8125rem;">Inquire Dates</a>
+              </div>
+            </div>
           </div>
-          <div class="bento-item reveal-item delay-4">
-            <img src="X-Figure%20Fitness%20assets%20/PSY06015.jpg" alt="Gym Facility" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet Our Coaches Section -->
+    <section id="trainers" class="trainers-section section-pad" style="background: radial-gradient(circle at top center, rgba(212, 175, 55, 0.05), transparent 60%);">
+      <div class="container">
+        <div class="section-title reveal-item">
+          <h2>OUR CERTIFIED <span class="gradient-text">PERSONAL TRAINERS</span></h2>
+          <p>Passionate coaches dedicated to guiding your posture, weight goals, and personal transformation.</p>
+        </div>
+
+        <div class="trainers-grid">
+          <!-- Coach 1 -->
+          <div class="trainer-card reveal-item delay-1">
+            <div class="trainer-avatar">
+              <img src="totalfitness assets/trainer_male.jpg" alt="Senior Strength Coach" loading="lazy">
+            </div>
+            <span class="trainer-role">STRENGTH & HYPERTROPHY</span>
+            <h3>Senior Strength Coach</h3>
+            <p class="trainer-bio">Specializes in progressive resistance training, muscle building, weight lifting mechanics, and personal conditioning.</p>
+            <div class="trainer-tags">
+              <span>Personal Training</span>
+              <span>Strength & Form</span>
+              <span>Custom Splits</span>
+            </div>
           </div>
-          <div class="bento-item reveal-item delay-1">
-            <img src="X-Figure%20Fitness%20assets%20/PSY05742.jpg" alt="Gym Facility" loading="lazy">
+
+          <!-- Coach 2 -->
+          <div class="trainer-card reveal-item delay-2">
+            <div class="trainer-avatar">
+              <img src="totalfitness assets/trainer_female.jpg" alt="Women's Fitness Lead" loading="lazy">
+            </div>
+            <span class="trainer-role">WOMEN'S WELLNESS SPECIALIST</span>
+            <h3>Women's Fitness Specialist</h3>
+            <p class="trainer-bio">Dedicated coaching for female health, weight management, muscle toning, posture, and supportive ladies' special batches.</p>
+            <div class="trainer-tags">
+              <span>Ladies Batches</span>
+              <span>Diet Guidance</span>
+              <span>Goal Tracking</span>
+            </div>
           </div>
-          <div class="bento-item reveal-item delay-2">
-            <img src="X-Figure%20Fitness%20assets%20/PSY06017.jpg" alt="Gym Facility" loading="lazy">
+
+          <!-- Coach 3 -->
+          <div class="trainer-card reveal-item delay-3">
+            <div class="trainer-avatar">
+              <img src="totalfitness assets/bharatanatyam_class.jpg" alt="Bharatanatyam Instructor" loading="lazy">
+            </div>
+            <span class="trainer-role">CULTURAL ARTS INSTRUCTOR</span>
+            <h3>Bharatanatyam Instructor</h3>
+            <p class="trainer-bio">Traditional classical Indian dance instruction focusing on rhythm, posture, hand mudras, and expressive movement.</p>
+            <div class="trainer-tags">
+              <span>Bharatanatyam</span>
+              <span>Cultural Arts</span>
+              <span>Kids & Adults</span>
+            </div>
           </div>
-          <div class="bento-item reveal-item delay-3">
-            <img src="X-Figure%20Fitness%20assets%20/PSY06122.jpg" alt="Gym Facility" loading="lazy">
-          </div>
-          <div class="bento-item reveal-item delay-4">
-            <img src="X-Figure%20Fitness%20assets%20/2025-04-25.jpg" alt="Gym Facility" loading="lazy">
+
+          <!-- Coach 4 -->
+          <div class="trainer-card reveal-item delay-4">
+            <div class="trainer-avatar">
+              <img src="totalfitness assets/karate_class.jpg" alt="Martial Arts Coach" loading="lazy">
+            </div>
+            <span class="trainer-role">MARTIAL ARTS INSTRUCTOR</span>
+            <h3>Karate & Self-Defense Coach</h3>
+            <p class="trainer-bio">Discipline, agility, physical defense fundamentals, and structured martial arts training for youth and adults.</p>
+            <div class="trainer-tags">
+              <span>Karate Training</span>
+              <span>Self Defense</span>
+              <span>Agility Drills</span>
+            </div>
           </div>
         </div>
       </div>
@@ -162,6 +433,12 @@
           <h2>FLEXIBLE <span class="gradient-text">MEMBERSHIPS</span></h2>
           <p>Affordable rates with uncompromised quality. Choose the plan that fits you best.</p>
         </div>
+        
+        <div style="text-align: center; margin-bottom: 3rem; color: var(--text-muted);" class="reveal-item">
+          <p>Admission Fees: <strong>₹1000</strong></p>
+          <p>Kids (13-17): <strong>₹600</strong> | Kids (Inc. Treadmill): <strong>₹750</strong></p>
+        </div>
+
         <div class="pricing-grid split-pricing">
           <!-- Solo Membership -->
           <div class="price-card glass-card reveal-item delay-1">
@@ -174,25 +451,25 @@
             
             <div class="pricing-toggle">
               <button class="toggle-btn active" onclick="togglePricing('solo', 'general', this)">GENERAL</button>
-              <button class="toggle-btn" onclick="togglePricing('solo', 'pt', this)">ADD PT</button>
+              <button class="toggle-btn" onclick="togglePricing('solo', 'treadmill', this)">INC. TREADMILL</button>
             </div>
             
             <div class="pricing-rows" id="solo-rows">
               <div class="p-row">
                 <span class="p-duration">1 MONTH</span>
-                <span class="p-cost"><span class="strike"></span><span class="cost" data-general="₹3,500" data-pt="₹8,500">₹3,500</span></span>
+                <span class="p-cost"><span class="strike" data-general="" data-treadmill=""></span><span class="cost" data-general="₹750" data-treadmill="₹900">₹750</span></span>
               </div>
               <div class="p-row">
                 <span class="p-duration">3 MONTHS</span>
-                <span class="p-cost"><span class="strike" data-general="₹8,000" data-pt="₹15,000">₹8,000</span><span class="cost" data-general="₹7,500" data-pt="₹14,000">₹7,500</span></span>
+                <span class="p-cost"><span class="strike" data-general="₹2,250" data-treadmill="₹2,700">₹2,250</span><span class="cost" data-general="₹1,875" data-treadmill="₹2,250">₹1,875</span></span>
               </div>
               <div class="p-row">
                 <span class="p-duration">6 MONTHS</span>
-                <span class="p-cost"><span class="strike" data-general="₹14,000" data-pt="₹25,000">₹14,000</span><span class="cost" data-general="₹13,000" data-pt="₹23,000">₹13,000</span></span>
+                <span class="p-cost"><span class="strike" data-general="₹4,500" data-treadmill="₹5,400">₹4,500</span><span class="cost" data-general="₹3,750" data-treadmill="₹4,500">₹3,750</span></span>
               </div>
               <div class="p-row">
                 <span class="p-duration">1 YEAR</span>
-                <span class="p-cost"><span class="strike" data-general="₹24,000" data-pt="₹45,000">₹24,000</span><span class="cost" data-general="₹20,000" data-pt="₹40,000">₹20,000</span></span>
+                <span class="p-cost"><span class="strike" data-general="₹9,000" data-treadmill="₹10,800">₹9,000</span><span class="cost" data-general="₹7,500" data-treadmill="₹9,000">₹7,500</span></span>
               </div>
             </div>
           </div>
@@ -207,25 +484,25 @@
             
             <div class="pricing-toggle">
               <button class="toggle-btn active" onclick="togglePricing('couple', 'general', this)">GENERAL</button>
-              <button class="toggle-btn" onclick="togglePricing('couple', 'pt', this)">ADD PT</button>
+              <button class="toggle-btn" onclick="togglePricing('couple', 'treadmill', this)">INC. TREADMILL</button>
             </div>
             
             <div class="pricing-rows" id="couple-rows">
               <div class="p-row">
                 <span class="p-duration">1 MONTH</span>
-                <span class="p-cost"><span class="strike" data-general="₹17,000" data-pt="₹25,000">₹17,000</span><span class="cost highlight-text" data-general="₹15,000" data-pt="₹22,000">₹15,000</span></span>
+                <span class="p-cost"><span class="strike" data-general="₹1,500" data-treadmill="₹1,800">₹1,500</span><span class="cost highlight-text" data-general="₹1,400" data-treadmill="₹1,700">₹1,400</span></span>
               </div>
               <div class="p-row">
                 <span class="p-duration">3 MONTHS</span>
-                <span class="p-cost"><span class="strike" data-general="₹40,000" data-pt="₹60,000">₹40,000</span><span class="cost highlight-text" data-general="₹35,000" data-pt="₹55,000">₹35,000</span></span>
+                <span class="p-cost"><span class="strike" data-general="₹4,200" data-treadmill="₹5,100">₹4,200</span><span class="cost highlight-text" data-general="₹3,450" data-treadmill="₹4,200">₹3,450</span></span>
               </div>
               <div class="p-row">
                 <span class="p-duration">6 MONTHS</span>
-                <span class="p-cost"><span class="strike" data-general="₹70,000" data-pt="₹1,00,000">₹70,000</span><span class="cost highlight-text" data-general="₹60,000" data-pt="₹90,000">₹60,000</span></span>
+                <span class="p-cost"><span class="strike" data-general="₹8,400" data-treadmill="₹10,200">₹8,400</span><span class="cost highlight-text" data-general="₹7,000" data-treadmill="₹8,500">₹7,000</span></span>
               </div>
               <div class="p-row">
                 <span class="p-duration">1 YEAR</span>
-                <span class="p-cost"><span class="strike" data-general="₹1,00,000" data-pt="₹1,50,000">₹1,00,000</span><span class="cost highlight-text" data-general="₹90,000" data-pt="₹1,40,000">₹90,000</span></span>
+                <span class="p-cost"><span class="strike" data-general="₹16,800" data-treadmill="₹20,400">₹16,800</span><span class="cost highlight-text" data-general="₹14,000" data-treadmill="₹17,000">₹14,000</span></span>
               </div>
             </div>
           </div>
@@ -238,7 +515,7 @@
       <div class="container">
         <div class="section-title reveal-item">
           <h2>STRAIGHT FROM <span class="gradient-text">REAL MEMBERS</span></h2>
-          <p class="rating-text">4.7 ★ Based on 145 reviews</p>
+          <p class="rating-text">4.9 ★ Based on our wonderful community</p>
         </div>
 
         <div class="reviews-container reveal-item delay-2">
@@ -246,80 +523,89 @@
             <!-- Review 1 -->
             <div class="review-card glass-card">
               <div class="stars">★★★★★</div>
-              <p class="quote">"I've been going to this gym for a while now, and I love it! The place is big, clean, and well-kept. The coaches are friendly and always ready to help."</p>
+              <p class="quote">"I've been very satisfied with my experience at Total Fitness Gym. The gym is clean, well-equipped, and has everything needed for effective workouts. The trainers are professional, approachable, and always willing to provide guidance when needed."</p>
               <div class="author">
-                <h4>Rehna Joseph</h4>
-                <span>5 months ago</span>
+                <h4>Arun babu</h4>
+                <span>a month ago</span>
               </div>
             </div>
             <!-- Review 2 -->
             <div class="review-card glass-card">
               <div class="stars">★★★★★</div>
-              <p class="quote">"Good trainers and training. Kannan, Praveen and Anoop they do their job very well. They give diets planning and check with us every week."</p>
+              <p class="quote">"My experience at Total Fitness Gym has been absolutely amazing. They treat you like a family member, not just a customer, and that makes all the difference. The trainers are incredible—so knowledgeable and supportive."</p>
               <div class="author">
-                <h4>Akhil Anand</h4>
-                <span>2 years ago</span>
+                <h4>jithin Joy</h4>
+                <span>3 weeks ago</span>
               </div>
             </div>
             <!-- Review 3 -->
             <div class="review-card glass-card">
               <div class="stars">★★★★★</div>
-              <p class="quote">"Fantastic gym. Supportive and motivating atmosphere with approachable trainers and nice clientele. Inspiring quotes and messages on the walls."</p>
+              <p class="quote">"A really good gym with dedicated and knowledgeable trainers who genuinely care about your progress. They guide you properly and keep you motivated throughout your workouts. The cardio sessions are something you shouldn’t miss!"</p>
               <div class="author">
-                <h4>Neil Deuchar</h4>
-                <span>9 months ago</span>
+                <h4>Sruthi Rose</h4>
+                <span>4 months ago</span>
               </div>
             </div>
             <!-- Review 4 -->
             <div class="review-card glass-card">
               <div class="stars">★★★★★</div>
-              <p class="quote">"One of Best Best gym in area and nearby cities. Join and experience. Great 👍👌👌"</p>
+              <p class="quote">"Total Fitness is hands-down one of the best fitness centres I’ve ever been to. The facility is spotless, spacious, and equipped with modern, high-quality machines that make every workout efficient and enjoyable."</p>
               <div class="author">
-                <h4>Gopikrishnan M</h4>
-                <span>3 months ago</span>
+                <h4>joshy joseph</h4>
+                <span>8 months ago</span>
               </div>
             </div>
             <!-- Review 5 -->
             <div class="review-card glass-card">
               <div class="stars">★★★★★</div>
-              <p class="quote">"Awesome gym..... Well equipped and a well-experienced & friendly coach.. The friendly atmosphere and interactive vibe were impressive. All modern equipment."</p>
+              <p class="quote">"Total Fitness truly stands out. The gym is clean, the trainers are knowledgeable, and the ladies section offers privacy and comfort. The Zumba classes are fantastic, and I appreciate the quiet reading corner and modern waiting lounge."</p>
               <div class="author">
-                <h4>anju cm</h4>
-                <span>a year ago</span>
+                <h4>Babitha Baby</h4>
+                <span>8 months ago</span>
               </div>
             </div>
             <!-- Review 6 -->
             <div class="review-card glass-card">
               <div class="stars">★★★★★</div>
-              <p class="quote">"Its an ideal place for who has a pasion in fitness. Wide area and equipments makes the Gym Unique. Ambient car parking"</p>
+              <p class="quote">"Extremely well maintained gym with modern equipments. Trainer explains how to do the excercise properly...Love the gym"</p>
               <div class="author">
-                <h4>Manu Prabhu</h4>
-                <span>3 years ago</span>
+                <h4>Aarnav Suvin</h4>
+                <span>3 months ago</span>
+              </div>
+            </div>
+            <!-- Review 7 -->
+            <div class="review-card glass-card">
+              <div class="stars">★★★★★</div>
+              <p class="quote">"The facilities are modern, clean, and well maintained. The trainers are friendly, professional, and always ready to guide and motivate. A great gym for all fitness levels. Highly recommended!"</p>
+              <div class="author">
+                <h4>Rathish Ravindran</h4>
+                <span>6 months ago</span>
               </div>
             </div>
             <!-- Duplicates for seamless loop -->
             <div class="review-card glass-card">
               <div class="stars">★★★★★</div>
-              <p class="quote">"I've been going to this gym for a while now, and I love it! The place is big, clean, and well-kept. The coaches are friendly and always ready to help."</p>
+              <p class="quote">"I've been very satisfied with my experience at Total Fitness Gym. The gym is clean, well-equipped, and has everything needed for effective workouts. The trainers are professional, approachable, and always willing to provide guidance when needed."</p>
               <div class="author">
-                <h4>Rehna Joseph</h4>
-                <span>5 months ago</span>
+                <h4>Arun babu</h4>
+                <span>a month ago</span>
               </div>
             </div>
             <div class="review-card glass-card">
               <div class="stars">★★★★★</div>
-              <p class="quote">"Good trainers and training. Kannan, Praveen and Anoop they do their job very well. They give diets planning and check with us every week."</p>
+              <p class="quote">"My experience at Total Fitness Gym has been absolutely amazing. They treat you like a family member, not just a customer, and that makes all the difference. The trainers are incredible—so knowledgeable and supportive."</p>
               <div class="author">
-                <h4>Akhil Anand</h4>
-                <span>2 years ago</span>
+                <h4>jithin Joy</h4>
+                <span>3 weeks ago</span>
               </div>
             </div>
             <div class="review-card glass-card">
               <div class="stars">★★★★★</div>
-              <p class="quote">"Fantastic gym. Supportive and motivating atmosphere with approachable trainers and nice clientele. Inspiring quotes and messages on the walls."</p>
+              <p class="quote">"A really good gym with dedicated and knowledgeable trainers who genuinely care about your progress. They guide you properly and keep you motivated throughout your workouts. The cardio sessions are something you shouldn’t miss!"</p>
               <div class="author">
-                <h4>Neil Deuchar</h4>
-                <span>9 months ago</span>
+                <h4>Sruthi Rose</h4>
+                <span>4 months ago</span>
               </div>
             </div>
           </div>
@@ -329,17 +615,121 @@
 
     <!-- Location & Contact -->
     <section id="location" class="location-section section-pad">
-      <div class="container location-grid">
-        <div class="location-info reveal-item">
-          <h2>VISIT <span class="gradient-text">US</span></h2>
-          <p>Mookkannoor Ezhattumugham Rd, Ezhattumugham, Mookkannoor, Kerala 683577, India</p>
-          <a href="https://maps.app.goo.gl/RWtJcPXfmSGUDLQx7" target="_blank" class="btn-primary glow-btn mt-4">Open in Maps</a>
+      <div class="container">
+        <div class="section-title reveal-item">
+          <h2>GET IN <span class="gradient-text">TOUCH</span></h2>
+          <p>Have questions about memberships, batches, or personal training? Reach out to us directly or send a quick WhatsApp inquiry.</p>
         </div>
-        <div class="map-container reveal-item delay-2 glass-card">
-          <iframe 
-            src="https://maps.google.com/maps?q=X-figure%20fitness%20Mookkannoor&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Map -->
+          <div class="contact-info-col reveal-item delay-1">
+            <div class="glass-card contact-card">
+              <h3>VISIT <span class="gradient-text">TOTAL FITNESS</span></h3>
+              <p class="contact-sub">Located in the heart of Mananthavady, Wayanad. Stop by for a free tour and consultation.</p>
+              
+              <div class="contact-items">
+                <div class="contact-item">
+                  <div class="contact-icon">📍</div>
+                  <div>
+                    <strong>Location</strong>
+                    <p>Total Fitness Gym, Mananthavady, Wayanad, Kerala</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">📞</div>
+                  <div>
+                    <strong>Phone Numbers</strong>
+                    <p><a href="tel:+918606347114">+91 86063 47114</a> / <a href="tel:+919747075827">+91 97470 75827</a></p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">⏰</div>
+                  <div>
+                    <strong>Working Hours</strong>
+                    <p>Mon - Sat: 5:30 AM - 9:30 PM • Sun: 6:00 AM - 12:00 PM</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-actions-row">
+                <a href="https://share.google/8TBzdhuPfUzT2f0uB" target="_blank" rel="noopener noreferrer" class="btn-primary glow-btn" style="padding: 0.65rem 1.25rem; font-size: 0.875rem;">
+                  📍 Open in Maps
+                </a>
+                <div class="social-links" style="margin-top: 0;">
+                  <a href="https://www.instagram.com/total_fitness_mananthavady_?igsh=ZHhwd2cxZGR0ZDQy&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-btn instagram" aria-label="Follow us on Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                    </svg>
+                  </a>
+                  <a href="https://www.facebook.com/share/1BiRn6otqE/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-btn facebook" aria-label="Follow us on Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Map Embed -->
+              <div class="map-embed-wrapper mt-4">
+                <iframe 
+                  src="https://maps.google.com/maps?q=Total%20Fitness%20Mananthavady&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                  width="100%" height="220" style="border:0; border-radius: 14px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Glass WhatsApp Contact Form -->
+          <div class="contact-form-col reveal-item delay-2">
+            <div class="glass-card contact-form-card">
+              <div class="form-header">
+                <span class="badge glow-badge" style="font-size: 0.75rem;">DIRECT WHATSAPP INQUIRY</span>
+                <h3 style="margin-top: 0.75rem;">SEND US A <span class="gradient-text">MESSAGE</span></h3>
+                <p>Fill out the form below to chat directly with our trainers on WhatsApp.</p>
+              </div>
+
+              <form id="whatsapp-contact-form" class="contact-form" onsubmit="handleWhatsAppSubmit(event)">
+                <div class="form-group">
+                  <label for="wa-name">Full Name *</label>
+                  <input type="text" id="wa-name" name="name" placeholder="e.g. Rahul Sharma" required class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label for="wa-phone">Phone / WhatsApp Number *</label>
+                  <input type="tel" id="wa-phone" name="phone" placeholder="e.g. 98765 43210" required class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label for="wa-service">Program / Service of Interest</label>
+                  <select id="wa-service" name="service" class="form-control form-select">
+                    <option value="General Gym Membership">General Gym Membership</option>
+                    <option value="Personal Training (1-on-1)">Personal Training (1-on-1)</option>
+                    <option value="Ladies Special Batches">Ladies Special Batches</option>
+                    <option value="Bharatanatyam / Classical Dance">Bharatanatyam / Classical Dance</option>
+                    <option value="Karate & Self Defense">Karate & Self Defense</option>
+                    <option value="Zumba & Aerobics">Zumba & Aerobics</option>
+                    <option value="Weight Loss & Diet Consultation">Weight Loss & Diet Consultation</option>
+                    <option value="Couples Membership">Couples Membership</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="wa-message">Your Goal or Question (Optional)</label>
+                  <textarea id="wa-message" name="message" rows="3" placeholder="Tell us your goals, preferred timings, or any questions..." class="form-control"></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary glow-btn wa-submit-btn">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                  </svg>
+                  <span>Chat on WhatsApp</span>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -348,18 +738,35 @@
   <footer class="footer">
     <div class="container footer-flex">
       <div class="footer-brand">
-        <img src="X-Figure%20Fitness%20assets%20/logo-xfigure-new.png" alt="X-Figure Logo">
-        <p>X-Figure Fitness — The ultimate destination for fitness enthusiasts.</p>
+        <img src="totalfitness assets/Total fitnesslogo.png" alt="Total Fitness Logo">
+        <p>Total Fitness — Build Your Best Version with Us.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/total_fitness_mananthavady_?igsh=ZHhwd2cxZGR0ZDQy&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-btn instagram" aria-label="Follow us on Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/share/1BiRn6otqE/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-btn facebook" aria-label="Follow us on Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+        </div>
       </div>
       <div class="footer-links">
         <a href="#home">Home</a>
-        <a href="#experience">Experience</a>
+        <a href="#services">Services</a>
+        <a href="#classes">Classes</a>
+        <a href="#events">Events</a>
+        <a href="#trainers">Coaches</a>
         <a href="#gallery">Gallery</a>
-        <a href="#reviews">Reviews</a>
+        <a href="#pricing">Pricing</a>
       </div>
     </div>
     <div class="footer-bottom container">
-      <p>&copy; 2026 X-Figure Fitness. All rights reserved.</p>
+      <p>&copy; 2026 Total Fitness. All rights reserved.</p>
     </div>
   </footer>
 

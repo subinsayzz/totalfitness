@@ -100,3 +100,38 @@ function togglePricing(membershipType, planType, btnElement) {
     }
   });
 }
+
+/* ==========================================================================
+   WhatsApp Contact Form Handler
+   ========================================================================== */
+function handleWhatsAppSubmit(e) {
+  e.preventDefault();
+  
+  const nameEl = document.getElementById('wa-name');
+  const phoneEl = document.getElementById('wa-phone');
+  const serviceEl = document.getElementById('wa-service');
+  const messageEl = document.getElementById('wa-message');
+
+  const name = nameEl ? nameEl.value.trim() : '';
+  const phone = phoneEl ? phoneEl.value.trim() : '';
+  const service = serviceEl ? serviceEl.value : 'General Inquiry';
+  const message = messageEl ? messageEl.value.trim() : '';
+
+  if (!name || !phone) {
+    alert('Please enter your name and phone number.');
+    return;
+  }
+
+  const gymNumber = '918606347114';
+  let waText = `Hi Total Fitness Mananthavady!\n\n`;
+  waText += `👤 *Name:* ${name}\n`;
+  waText += `📞 *Phone:* ${phone}\n`;
+  waText += `🏋️ *Interested In:* ${service}\n`;
+  if (message) {
+    waText += `💬 *Message / Goal:* ${message}\n`;
+  }
+  waText += `\nI would like more information on joining Total Fitness.`;
+
+  const waUrl = `https://wa.me/${gymNumber}?text=${encodeURIComponent(waText)}`;
+  window.open(waUrl, '_blank');
+}
