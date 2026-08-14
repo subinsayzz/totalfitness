@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Close menu when clicking a link
-    const navLinks = mainNav.querySelectorAll('.nav-link, .btn-primary');
+    const navLinks = mainNav.querySelectorAll('.nav-link, .dropdown-item, .btn-primary');
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         mainNav.classList.remove('mobile-open');
