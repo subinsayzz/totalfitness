@@ -12,20 +12,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Custom Cursor -->
-  <div class="cursor-dot"></div>
-  <div class="cursor-outline"></div>
-
   <!-- Header -->
   <header class="glass-header" id="header">
     <div class="header-container">
       <a href="#home" class="logo-wrapper">
         <img src="totalfitness assets/Total fitnesslogo.png" alt="Total Fitness Logo" class="brand-logo">
       </a>
-      
-      <button class="mobile-menu-btn" aria-label="Toggle Menu">
-        <span></span><span></span><span></span>
-      </button>
 
       <nav class="main-nav">
         <a href="#home" class="nav-link">Home</a>
@@ -62,8 +54,15 @@
         </div>
 
         <a href="#pricing" class="nav-link">Pricing</a>
-        <a href="#location" class="btn-primary glow-btn">Join Now</a>
+        <a href="#location" class="btn-primary glow-btn mobile-cta-only">Join Now</a>
       </nav>
+
+      <div class="header-actions">
+        <a href="#location" class="btn-primary glow-btn desktop-cta">Join Now</a>
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -83,9 +82,12 @@
       <div class="hero-overlay"></div>
       
       <div class="hero-content reveal-wrapper">
-        <div class="badge reveal-item delay-1">TOTAL FITNESS - MANANTHAVADY</div>
-        <h1 class="reveal-item delay-2">TRAIN IN A SPACE BUILT FOR<br><span class="gradient-text">REAL PROGRESS</span></h1>
-        <p class="hero-desc reveal-item delay-3">A clean, spacious gym in the heart of Wayanad with strength machines, cardio zones, group sessions, and trainers who help you show up with confidence.</p>
+        <div class="badge reveal-item delay-1">TOTAL FITNESS • MANANTHAVADY</div>
+        <h1 class="reveal-item delay-2">
+          <span class="hero-title-top">TRAIN IN A SPACE BUILT FOR</span>
+          <span class="hero-title-main gradient-text">REAL PROGRESS</span>
+        </h1>
+        <p class="hero-desc reveal-item delay-3">A clean, fully equipped gym in Mananthavady with Star Trac strength machines, dedicated cardio and strength zones, morning & evening batches, and supportive trainers.</p>
         <div class="hero-actions reveal-item delay-4">
           <a href="#pricing" class="btn-primary glow-btn">View Memberships</a>
           <a href="#gallery" class="btn-secondary">See Inside</a>
@@ -102,12 +104,12 @@
     <section id="about" class="about-section section-pad">
       <div class="container about-grid">
         <div class="about-image reveal-item">
-          <img src="totalfitness assets/vlcsnap-2026-08-06-02h48m31s026.png" alt="About Total Fitness" class="glass-card" loading="lazy">
+          <img src="totalfitness assets/vlcsnap-2026-08-06-02h48m31s026.png" alt="Inside Total Fitness Mananthavady" class="glass-card" loading="lazy">
         </div>
         <div class="about-text reveal-item delay-2">
           <h2>ABOUT <span class="gradient-text">TOTAL FITNESS</span></h2>
-          <p>Located right here in beautiful Mananthavady, Total Fitness is so much more than just a place to lift weights. We believe in creating a space that feels like home—where everyone from beginners to pros feels comfortable, safe, and motivated.</p>
-          <p>Our clean, spacious facility is packed with modern equipment, but what really sets us apart is our people. Our friendly trainers take the time to know you, understand your goals, and guide you every step of the way. Step through our doors and let's build the best version of you, together.</p>
+          <p>Founded in Mananthavady, Total Fitness was built to provide Wayanad with a modern, motivating, and welcoming fitness facility for everyone—from beginners lifting their first dumbbell to experienced athletes.</p>
+          <p>Our training floor is fitted with genuine Star Trac resistance machines, dedicated free weight racks, and high-performance cardio decks. With certified personal trainers on the floor and private ladies batches, we give you the guidance and structure you need to hit your fitness goals.</p>
           <div class="about-stats mt-4">
             <div class="stat-card">
               <div class="stat-icon-wrap">
@@ -118,8 +120,8 @@
               </div>
               <div class="stat-info">
                 <h3 class="stat-num gradient-text">100%</h3>
-                <span class="stat-title">Certified Trainers</span>
-                <p class="stat-sub">Expert 1-on-1 Guidance</p>
+                <span class="stat-title">Certified Coaches</span>
+                <p class="stat-sub">Personalized 1-on-1 Guidance</p>
               </div>
             </div>
             <div class="stat-card">
@@ -134,7 +136,7 @@
               <div class="stat-info">
                 <h3 class="stat-num gradient-text">750+</h3>
                 <span class="stat-title">Active Members</span>
-                <p class="stat-sub">Community in Wayanad</p>
+                <p class="stat-sub">Thriving Wayanad Community</p>
               </div>
             </div>
           </div>
@@ -142,59 +144,79 @@
       </div>
     </section>
 
-    <!-- Services Section (replaces Features) -->
+    <!-- Services Section -->
     <section id="services" class="features-section section-pad">
       <div class="container">
         <div class="section-title reveal-item">
           <h2>OUR <span class="gradient-text">SERVICES</span></h2>
-          <p>Experience world-class training programs designed for your peak performance.</p>
+          <p>Comprehensive fitness, strength, and movement programs led by certified coaches in Mananthavady.</p>
         </div>
 
         <div class="services-grid">
           <div class="service-card glass-card reveal-item delay-1">
-            <div class="service-icon">💪</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6.5 6.5 11 11"/><path d="m21 21-1-1a5 5 0 0 0-7.07 0l-.93.93a5 5 0 0 1-7.07 0l-1-1"/><path d="m3 3 1 1a5 5 0 0 0 7.07 0l.93-.93a5 5 0 0 1 7.07 0l1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/></svg>
+            </div>
             <h3>Personal Training</h3>
           </div>
           <div class="service-card glass-card reveal-item delay-2">
-            <div class="service-icon">👥</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
             <h3>Group Training</h3>
           </div>
           <div class="service-card glass-card reveal-item delay-3">
-            <div class="service-icon">🎵</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
             <h3>Zumba / Aerobics</h3>
           </div>
           <div class="service-card glass-card reveal-item delay-4">
-            <div class="service-icon">🏃</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
             <h3>Cardio Training</h3>
           </div>
           <div class="service-card glass-card reveal-item delay-1">
-            <div class="service-icon">🎯</div>
-            <h3>Weight Programs</h3>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <h3>Weight Management</h3>
           </div>
           <div class="service-card glass-card reveal-item delay-2">
-            <div class="service-icon">🏋️</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="3" height="6" rx="1"/><rect x="19" y="9" width="3" height="6" rx="1"/><rect x="5" y="6" width="3" height="12" rx="1"/><rect x="16" y="6" width="3" height="12" rx="1"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            </div>
             <h3>Strength & Resistance</h3>
           </div>
           <div class="service-card glass-card reveal-item delay-3">
-            <div class="service-icon">🤸</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
             <h3>Functional Training</h3>
           </div>
           <div class="service-card glass-card reveal-item delay-4">
-            <div class="service-icon">🧘</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="m9 20 3-6 3 6"/><path d="m6 8 6 2 6-2"/><path d="M12 10v4"/></svg>
+            </div>
             <h3>Flexibility & Mobility</h3>
           </div>
           <div class="service-card glass-card reveal-item delay-1">
-            <div class="service-icon">🥗</div>
-            <h3>Nutrition & Diet</h3>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            </div>
+            <h3>Nutrition Guidance</h3>
           </div>
           <div class="service-card glass-card reveal-item delay-2">
-            <div class="service-icon">🥋</div>
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="m4 17 5-2 3-5-2-4"/><path d="m14 13 4 3 2 4"/><path d="m9 15-2 5"/></svg>
+            </div>
             <h3>Karate & Dance</h3>
           </div>
         </div>
 
         <div class="text-center mt-4 reveal-item delay-3" style="text-align: center; margin-top: 4rem;">
-          <div class="badge glow-badge">✨ LADIES SPECIAL BATCHES AVAILABLE ✨</div>
+          <div class="badge glow-badge">LADIES SPECIAL BATCHES AVAILABLE</div>
         </div>
       </div>
     </section>
@@ -204,7 +226,7 @@
       <div class="container">
         <div class="section-title reveal-item">
           <h2>STUDIO & <span class="gradient-text">CULTURAL CLASSES</span></h2>
-          <p>Holistic training, classical Indian dance, martial arts, and vibrant group movement for all age groups.</p>
+          <p>Structured instruction in classical dance, martial arts, yoga, and group fitness for all age groups.</p>
         </div>
 
         <div class="classes-grid">
@@ -212,14 +234,20 @@
           <div class="class-card reveal-item delay-1">
             <div class="class-img-box">
               <span class="class-badge">CULTURAL ARTS</span>
-              <img src="totalfitness assets/bharatanatyam_class.jpg" alt="Bharatanatyam Class" loading="lazy">
+              <img src="totalfitness assets/vlcsnap-2026-08-06-02h51m44s915.png" alt="Dance Studio at Total Fitness" loading="lazy">
             </div>
             <div class="class-body">
               <h3>BHARATANATYAM</h3>
-              <p>Master traditional footwork, rhythmic padams, hand mudras, and expressive abhinaya under certified gurus. Batches available for kids and adults.</p>
+              <p>Traditional classical Indian dance instruction focusing on rhythm, posture, hand mudras, and expressive movement for kids and adults.</p>
               <div class="class-meta">
-                <span class="schedule">📅 Mon, Wed & Fri</span>
-                <span>⏰ 5:00 PM - 6:30 PM</span>
+                <span class="schedule">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Mon, Wed & Fri
+                </span>
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  5:00 PM - 6:30 PM
+                </span>
               </div>
             </div>
           </div>
@@ -228,14 +256,20 @@
           <div class="class-card reveal-item delay-2">
             <div class="class-img-box">
               <span class="class-badge">MARTIAL ARTS</span>
-              <img src="totalfitness assets/karate_class.jpg" alt="Karate & Self Defense" loading="lazy">
+              <img src="totalfitness assets/vlcsnap-2026-08-06-02h50m17s241.png" alt="Martial Arts Studio Floor" loading="lazy">
             </div>
             <div class="class-body">
               <h3>KARATE & SELF-DEFENSE</h3>
-              <p>Build discipline, mental focus, reflexes, and practical self-defense with black-belt certified senseis and belt progression grading.</p>
+              <p>Practical self-defense fundamentals, discipline, agility, and belt progression grading led by black-belt instructors.</p>
               <div class="class-meta">
-                <span class="schedule">📅 Tue, Thu & Sat</span>
-                <span>⏰ 6:00 PM - 7:30 PM</span>
+                <span class="schedule">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Tue, Thu & Sat
+                </span>
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  6:00 PM - 7:30 PM
+                </span>
               </div>
             </div>
           </div>
@@ -244,14 +278,20 @@
           <div class="class-card reveal-item delay-3">
             <div class="class-img-box">
               <span class="class-badge">GROUP DANCE</span>
-              <img src="totalfitness assets/zumba_class.jpg" alt="Zumba & Aerobics" loading="lazy">
+              <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.09 (1).jpeg" alt="Group Training Studio" loading="lazy">
             </div>
             <div class="class-body">
               <h3>ZUMBA & AEROBICS</h3>
-              <p>High-energy calorie-burning dance workout set to upbeat music. Improve cardio stamina, tone your full body, and have fun together.</p>
+              <p>High-energy cardio dance workouts with upbeat music designed to burn calories, tone the body, and keep you energized.</p>
               <div class="class-meta">
-                <span class="schedule">📅 Daily Batches</span>
-                <span>⏰ Morning & Evening</span>
+                <span class="schedule">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Daily Batches
+                </span>
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Morning & Evening
+                </span>
               </div>
             </div>
           </div>
@@ -260,14 +300,20 @@
           <div class="class-card reveal-item delay-4">
             <div class="class-img-box">
               <span class="class-badge">WELLNESS & FLOW</span>
-              <img src="totalfitness assets/yoga_class.jpg" alt="Yoga & Flexibility" loading="lazy">
+              <img src="totalfitness assets/vlcsnap-2026-08-06-02h48m31s026.png" alt="Yoga and Mobility Space" loading="lazy">
             </div>
             <div class="class-body">
               <h3>YOGA & MOBILITY</h3>
-              <p>Restore joint health, release tight muscles, correct posture, and calm your nervous system with guided pranayama and asana flows.</p>
+              <p>Improve flexibility, correct daily posture, restore joint health, and calm the nervous system with guided asana flows.</p>
               <div class="class-meta">
-                <span class="schedule">📅 Mon to Sat</span>
-                <span>⏰ 6:30 AM - 7:30 AM</span>
+                <span class="schedule">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Mon to Sat
+                </span>
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  6:30 AM - 7:30 AM
+                </span>
               </div>
             </div>
           </div>
@@ -280,16 +326,16 @@
       <div class="container">
         <div class="section-title reveal-item">
           <h2>INSIDE <span class="gradient-text">THE GYM</span></h2>
-          <p>An expansive layout carefully designed to elevate your training sessions.</p>
+          <p>A spacious training environment in Mananthavady built for strength and consistency.</p>
         </div>
 
         <div class="bento-grid">
           <figure class="bento-item bento-wide reveal-item delay-1">
-            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.09 (1).jpeg" alt="Bright strength training floor at Total Fitness" loading="lazy">
+            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.09 (1).jpeg" alt="Strength training floor at Total Fitness" loading="lazy">
             <figcaption>Strength floor</figcaption>
           </figure>
           <figure class="bento-item reveal-item delay-2">
-            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.08 (2).jpeg" alt="Cardio machines and open workout area" loading="lazy">
+            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.08 (2).jpeg" alt="Cardio machines and workout area" loading="lazy">
             <figcaption>Cardio zone</figcaption>
           </figure>
           <figure class="bento-item reveal-item delay-3">
@@ -297,11 +343,11 @@
             <figcaption>Free weights</figcaption>
           </figure>
           <figure class="bento-item bento-tall reveal-item delay-4">
-            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.08 (1).jpeg" alt="Loaded barbell and resistance training setup" loading="lazy">
+            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.08 (1).jpeg" alt="Resistance training setup" loading="lazy">
             <figcaption>Resistance training</figcaption>
           </figure>
           <figure class="bento-item reveal-item delay-1">
-            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.08 (4).jpeg" alt="Treadmills and cardio equipment facing the gym mural" loading="lazy">
+            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.08 (4).jpeg" alt="Treadmills facing the gym mural" loading="lazy">
             <figcaption>Treadmill area</figcaption>
           </figure>
           <figure class="bento-item reveal-item delay-2">
@@ -309,7 +355,7 @@
             <figcaption>Club entrance</figcaption>
           </figure>
           <figure class="bento-item bento-wide reveal-item delay-3">
-            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.09 (4).jpeg" alt="Panoramic view of the gym equipment layout" loading="lazy">
+            <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.09 (4).jpeg" alt="Gym equipment layout" loading="lazy">
             <figcaption>Open training layout</figcaption>
           </figure>
         </div>
@@ -321,22 +367,22 @@
       <div class="container">
         <div class="section-title reveal-item">
           <h2>MEMBER <span class="gradient-text">PROGRAMS & WORKSHOPS</span></h2>
-          <p>Compete, connect, and elevate your fitness journey through exclusive member workshops and seasonal challenges.</p>
+          <p>Technique workshops, progressive overload coaching, and transformation bootcamps.</p>
         </div>
 
         <div class="events-grid">
           <!-- Event 1 -->
           <div class="event-card reveal-item delay-1">
             <div class="event-img-wrap">
-              <span class="event-date-badge">SEASONAL<br><small>WORKSHOP</small></span>
-              <img src="totalfitness assets/vlcsnap-2026-08-06-02h40m56s237.png" alt="Strength & Powerlifting Masterclass" loading="lazy">
+              <span class="event-date-badge">STRENGTH<br><small>WORKSHOP</small></span>
+              <img src="totalfitness assets/vlcsnap-2026-08-06-02h44m29s656.png" alt="Strength & Powerlifting Setup" loading="lazy">
             </div>
             <div class="event-body">
               <span class="event-category">SPECIALIZED WORKSHOP</span>
               <h3>STRENGTH & POWERLIFTING DRILLS</h3>
-              <p>Form checks, bench press & deadlift mechanics, and progressive overload masterclasses under expert guidance.</p>
+              <p>Proper bench press, squat, and deadlift mechanics, barbell safety, and progressive overload under coach supervision.</p>
               <div class="event-footer">
-                <span class="event-location">📅 Inquire at Desk</span>
+                <span class="event-location">Inquire at Front Desk</span>
                 <a href="#location" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8125rem;">Inquire Details</a>
               </div>
             </div>
@@ -345,15 +391,15 @@
           <!-- Event 2 -->
           <div class="event-card reveal-item delay-2">
             <div class="event-img-wrap">
-              <span class="event-date-badge">CONTINUOUS<br><small>ENROLMENT</small></span>
-              <img src="totalfitness assets/vlcsnap-2026-08-06-02h43m47s839.png" alt="Body Transformation Challenge" loading="lazy">
+              <span class="event-date-badge">BATCH<br><small>ENROLMENT</small></span>
+              <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.08.jpeg" alt="Transformation Bootcamp" loading="lazy">
             </div>
             <div class="event-body">
               <span class="event-category">TRANSFORMATION PROGRAM</span>
               <h3>BODY TRANSFORMATION BOOTCAMP</h3>
-              <p>Customized workout splits, periodic body composition tracking, and personalized diet guidance tailored to your body goal.</p>
+              <p>Structured workout splits, body composition tracking, and practical diet guidance tailored to your schedule.</p>
               <div class="event-footer">
-                <span class="event-location">📅 Flexible Batches</span>
+                <span class="event-location">Morning & Evening Batches</span>
                 <a href="#location" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8125rem;">Join Program</a>
               </div>
             </div>
@@ -362,15 +408,15 @@
           <!-- Event 3 -->
           <div class="event-card reveal-item delay-3">
             <div class="event-img-wrap">
-              <span class="event-date-badge">OUTDOOR<br><small>SESSIONS</small></span>
-              <img src="totalfitness assets/vlcsnap-2026-08-06-02h51m44s915.png" alt="Outdoor Conditioning & Trail Runs" loading="lazy">
+              <span class="event-date-badge">CARDIO<br><small>SESSION</small></span>
+              <img src="totalfitness assets/WhatsApp Image 2026-08-06 at 03.52.08 (4).jpeg" alt="Cardio Conditioning Deck" loading="lazy">
             </div>
             <div class="event-body">
-              <span class="event-category">OUTDOOR CONDITIONING</span>
-              <h3>OUTDOOR DRILLS & TRAIL RUNS</h3>
-              <p>Group stamina conditioning, outdoor cardiovascular endurance, and fresh air mountain training sessions.</p>
+              <span class="event-category">ENDURANCE TRAINING</span>
+              <h3>CARDIO & STAMINA DRILLS</h3>
+              <p>High-intensity interval cardio training, endurance building, and structured treadmill workouts.</p>
               <div class="event-footer">
-                <span class="event-location">📅 Announced Monthly</span>
+                <span class="event-location">Weekly Sessions</span>
                 <a href="#location" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8125rem;">Inquire Dates</a>
               </div>
             </div>
@@ -383,34 +429,34 @@
     <section id="trainers" class="trainers-section section-pad" style="background: radial-gradient(circle at top center, rgba(212, 175, 55, 0.05), transparent 60%);">
       <div class="container">
         <div class="section-title reveal-item">
-          <h2>OUR CERTIFIED <span class="gradient-text">PERSONAL TRAINERS</span></h2>
-          <p>Passionate coaches dedicated to guiding your posture, weight goals, and personal transformation.</p>
+          <h2>OUR CERTIFIED <span class="gradient-text">COACHES & DISCIPLINES</span></h2>
+          <p>Experienced coaches dedicated to proper lifting technique, safety, and consistent progress.</p>
         </div>
 
         <div class="trainers-grid">
-          <!-- Coach 1 -->
+          <!-- Discipline 1 -->
           <div class="trainer-card reveal-item delay-1">
             <div class="trainer-avatar">
-              <img src="totalfitness assets/trainer_male.jpg" alt="Senior Strength Coach" loading="lazy">
+              <img src="totalfitness assets/vlcsnap-2026-08-06-02h44m29s656.png" alt="Strength & Hypertrophy Training" loading="lazy">
             </div>
             <span class="trainer-role">STRENGTH & HYPERTROPHY</span>
-            <h3>Senior Strength Coach</h3>
-            <p class="trainer-bio">Specializes in progressive resistance training, muscle building, weight lifting mechanics, and personal conditioning.</p>
+            <h3>Strength & Conditioning</h3>
+            <p class="trainer-bio">Progressive resistance training, compound lifting technique, muscle building, and personalized gym routines.</p>
             <div class="trainer-tags">
               <span>Personal Training</span>
-              <span>Strength & Form</span>
+              <span>Form & Posture</span>
               <span>Custom Splits</span>
             </div>
           </div>
 
-          <!-- Coach 2 -->
+          <!-- Discipline 2 -->
           <div class="trainer-card reveal-item delay-2">
             <div class="trainer-avatar">
-              <img src="totalfitness assets/trainer_female.jpg" alt="Women's Fitness Lead" loading="lazy">
+              <img src="totalfitness assets/vlcsnap-2026-08-06-02h48m31s026.png" alt="Women's Fitness Batches" loading="lazy">
             </div>
-            <span class="trainer-role">WOMEN'S WELLNESS SPECIALIST</span>
+            <span class="trainer-role">WOMEN'S WELLNESS & BATCHES</span>
             <h3>Women's Fitness Specialist</h3>
-            <p class="trainer-bio">Dedicated coaching for female health, weight management, muscle toning, posture, and supportive ladies' special batches.</p>
+            <p class="trainer-bio">Dedicated coaching for female health, toning, fat loss, and supportive private ladies' training batches.</p>
             <div class="trainer-tags">
               <span>Ladies Batches</span>
               <span>Diet Guidance</span>
@@ -418,13 +464,13 @@
             </div>
           </div>
 
-          <!-- Coach 3 -->
+          <!-- Discipline 3 -->
           <div class="trainer-card reveal-item delay-3">
             <div class="trainer-avatar">
-              <img src="totalfitness assets/bharatanatyam_class.jpg" alt="Bharatanatyam Instructor" loading="lazy">
+              <img src="totalfitness assets/vlcsnap-2026-08-06-02h51m44s915.png" alt="Cultural Dance Studio" loading="lazy">
             </div>
             <span class="trainer-role">CULTURAL ARTS INSTRUCTOR</span>
-            <h3>Bharatanatyam Instructor</h3>
+            <h3>Bharatanatyam & Dance</h3>
             <p class="trainer-bio">Traditional classical Indian dance instruction focusing on rhythm, posture, hand mudras, and expressive movement.</p>
             <div class="trainer-tags">
               <span>Bharatanatyam</span>
@@ -433,14 +479,14 @@
             </div>
           </div>
 
-          <!-- Coach 4 -->
+          <!-- Discipline 4 -->
           <div class="trainer-card reveal-item delay-4">
             <div class="trainer-avatar">
-              <img src="totalfitness assets/karate_class.jpg" alt="Martial Arts Coach" loading="lazy">
+              <img src="totalfitness assets/vlcsnap-2026-08-06-02h50m17s241.png" alt="Martial Arts & Self-Defense" loading="lazy">
             </div>
             <span class="trainer-role">MARTIAL ARTS INSTRUCTOR</span>
-            <h3>Karate & Self-Defense Coach</h3>
-            <p class="trainer-bio">Discipline, agility, physical defense fundamentals, and structured martial arts training for youth and adults.</p>
+            <h3>Karate & Self-Defense</h3>
+            <p class="trainer-bio">Discipline, reflexes, physical defense fundamentals, and structured martial arts training for youth and adults.</p>
             <div class="trainer-tags">
               <span>Karate Training</span>
               <span>Self Defense</span>
@@ -456,19 +502,22 @@
       <div class="container">
         <div class="section-title reveal-item">
           <h2>FLEXIBLE <span class="gradient-text">MEMBERSHIPS</span></h2>
-          <p>Affordable rates with uncompromised quality. Choose the plan that fits you best.</p>
+          <p>Transparent membership options with zero hidden fees. Choose the plan that fits you best.</p>
         </div>
         
-        <div style="text-align: center; margin-bottom: 3rem; color: var(--text-muted);" class="reveal-item">
+        <div class="pricing-note-banner reveal-item">
           <p>Admission Fees: <strong>₹1000</strong></p>
-          <p>Kids (13-17): <strong>₹600</strong> | Kids (Inc. Treadmill): <strong>₹750</strong></p>
+          <span class="pricing-divider">|</span>
+          <p>Kids (13-17): <strong>₹600</strong> • Kids (Inc. Treadmill): <strong>₹750</strong></p>
         </div>
 
         <div class="pricing-grid split-pricing">
           <!-- Solo Membership -->
           <div class="price-card glass-card reveal-item delay-1">
             <div class="card-header-flex">
-              <div class="icon-avatar">👤</div>
+              <div class="icon-avatar">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
               <h3>SOLO<br>MEMBERSHIP</h3>
             </div>
             <!-- Spacer to match couple subtitle height -->
@@ -502,7 +551,9 @@
           <!-- Couple Membership -->
           <div class="price-card glass-card highlight-card reveal-item delay-2">
             <div class="card-header-flex">
-              <div class="icon-avatar highlight-icon">👥</div>
+              <div class="icon-avatar highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
               <h3>COUPLE<br>MEMBERSHIP</h3>
             </div>
             <p class="couple-sub">Pricing is for <strong>2 members</strong></p>
@@ -531,8 +582,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </section>
 
     <!-- Scrolling Reviews Section -->
@@ -655,21 +704,27 @@
               
               <div class="contact-items">
                 <div class="contact-item">
-                  <div class="contact-icon">📍</div>
+                  <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
                   <div>
                     <strong>Location</strong>
                     <p>Total Fitness Gym, Mananthavady, Wayanad, Kerala</p>
                   </div>
                 </div>
                 <div class="contact-item">
-                  <div class="contact-icon">📞</div>
+                  <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
                   <div>
                     <strong>Phone Numbers</strong>
                     <p><a href="tel:+918606347114">+91 86063 47114</a> / <a href="tel:+919747075827">+91 97470 75827</a></p>
                   </div>
                 </div>
                 <div class="contact-item">
-                  <div class="contact-icon">⏰</div>
+                  <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </div>
                   <div>
                     <strong>Working Hours</strong>
                     <p>Mon - Sat: 5:30 AM - 9:30 PM • Sun: 6:00 AM - 12:00 PM</p>
@@ -678,8 +733,9 @@
               </div>
 
               <div class="contact-actions-row">
-                <a href="https://share.google/8TBzdhuPfUzT2f0uB" target="_blank" rel="noopener noreferrer" class="btn-primary glow-btn" style="padding: 0.65rem 1.25rem; font-size: 0.875rem;">
-                  📍 Open in Maps
+                <a href="https://share.google/8TBzdhuPfUzT2f0uB" target="_blank" rel="noopener noreferrer" class="btn-primary glow-btn" style="padding: 0.65rem 1.25rem; font-size: 0.875rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                  Open in Google Maps
                 </a>
                 <div class="social-links" style="margin-top: 0;">
                   <a href="https://www.instagram.com/total_fitness_mananthavady_?igsh=ZHhwd2cxZGR0ZDQy&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-btn instagram" aria-label="Follow us on Instagram">
